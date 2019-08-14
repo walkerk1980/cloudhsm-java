@@ -23,7 +23,7 @@ Getting Started:
 
   docker stop cloudhsm
 
-  docker run -it -d -e CLUSTERID=cluster-5la5cwabs7v -v cloudhsm_data:/root/data --name cloudhsm -e REGION=us-west-2 walkerk1980/cloudhsm-java /usr/local/bin/startup.sh
+  docker run -it -d -e CLUSTERID=cluster-5la5cwabs7v -v cloudhsm_data:/root/data --name cloudhsm -e REGION=us-west-2 HSM_USER=CUUsername HSM_PASSWORD=CUPassword walkerk1980/cloudhsm-java /usr/local/bin/startup.sh
 
 
 Example commands once container is running:
