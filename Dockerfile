@@ -11,7 +11,7 @@ RUN apt-get update && \
   && apt-get update \
   && /bin/rm -rf /var/lib/apt/lists/*
 WORKDIR /opt/
-RUN $ wget http://mirrors.advancedhosters.com/apache/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz \
+RUN wget http://mirrors.advancedhosters.com/apache/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz \
   && tar -xzvf apache-maven-3.6.1-bin.tar.gz \
   && update-alternatives --install /usr/bin/mvn maven /opt/apache-maven-3.6.1/bin/mvn 1001 \
   && rm apache-maven-3.6.1-bin.tar.gz
