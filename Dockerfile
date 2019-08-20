@@ -16,6 +16,7 @@ RUN $ wget http://mirrors.advancedhosters.com/apache/maven/maven-3/3.6.1/binarie
   && rm apache-maven-3.6.1-bin.tar.gz
 ENV LD_LIBRARY_PATH=/opt/cloudhsm/lib
 ENV HSM_PARTITION=PARTITION_1
+ENV JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64"
 ENV CAKEYPASS=Password1
 ENV CASUBJECT=example.com
 ENV REGION=us-west-2
