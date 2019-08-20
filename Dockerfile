@@ -5,7 +5,7 @@ RUN /usr/bin/wget https://s3.amazonaws.com/cloudhsmv2-software/CloudHsmClient/Xe
   && /bin/rm cloudhsm-client-jce_latest_amd64.deb
 RUN apt-get update && \
   DEBIAN_FRONTEND=noninteractive apt-get -o Dpkg::Options::="--force-confnew" --assume-yes -y --yes -f install -y \ 
-  openjdk-8-jre \
+  openjdk-8-jdk \
   software-properties-common \
   git \
   && apt-get update \
